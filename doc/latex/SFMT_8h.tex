@@ -1,0 +1,236 @@
+\hypertarget{SFMT_8h}{}\doxysection{M\+N\+P\+\_\+\+L\+I\+B/\+S\+F\+MT.h File Reference}
+\label{SFMT_8h}\index{MNP\_LIB/SFMT.h@{MNP\_LIB/SFMT.h}}
+
+
+S\+I\+MD oriented Fast Mersenne Twister(\+S\+F\+M\+T) pseudorandom number generator using C structure.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+T-\/params.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{unionW128__T}{W128\+\_\+T}}
+\item 
+struct \mbox{\hyperlink{structSFMT__T}{S\+F\+M\+T\+\_\+T}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{SFMT_8h_a7b09bf387434973d287ff39ee33b3ac6}{S\+F\+M\+T\+S\+T\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{SFMT_8h_ac582131d7a7c8ee57e73180d1714f9d5}{P\+R\+Iu64}}~\char`\"{}llu\char`\"{}
+\item 
+\#define \mbox{\hyperlink{SFMT_8h_aba38357387a474f439428dee1984fc5a}{P\+R\+Ix64}}~\char`\"{}llx\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef union \mbox{\hyperlink{unionW128__T}{W128\+\_\+T}} \mbox{\hyperlink{SFMT_8h_ab1ee414cba9ca0f33a3716e7a92c2b79}{w128\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structSFMT__T}{S\+F\+M\+T\+\_\+T}} \mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{SFMT_8h_a04f57c1e9a6b5c0c52ac774a50da6c7e}{sfmt\+\_\+fill\+\_\+array32}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt, uint32\+\_\+t $\ast$array, int size)
+\item 
+void \mbox{\hyperlink{SFMT_8h_ab9d6542bb167426bd35591afd32136af}{sfmt\+\_\+fill\+\_\+array64}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt, uint64\+\_\+t $\ast$array, int size)
+\item 
+void \mbox{\hyperlink{SFMT_8h_a674d820db863265836ef9cb203aa4130}{sfmt\+\_\+init\+\_\+gen\+\_\+rand}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt, uint32\+\_\+t seed)
+\item 
+void \mbox{\hyperlink{SFMT_8h_a28f357a6d2a9cd74cec3c9d458e58475}{sfmt\+\_\+init\+\_\+by\+\_\+array}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt, uint32\+\_\+t $\ast$init\+\_\+key, int key\+\_\+length)
+\item 
+const char $\ast$ \mbox{\hyperlink{SFMT_8h_a6454ae6ac89dbaa2fd5db79be99dd408}{sfmt\+\_\+get\+\_\+idstring}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt)
+\item 
+int \mbox{\hyperlink{SFMT_8h_a4a0698581c5ce4fdb269f814fd438a5f}{sfmt\+\_\+get\+\_\+min\+\_\+array\+\_\+size32}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt)
+\item 
+int \mbox{\hyperlink{SFMT_8h_a22ebb5ab2cf7e28d2bcf21ffffcc7e39}{sfmt\+\_\+get\+\_\+min\+\_\+array\+\_\+size64}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt)
+\item 
+void \mbox{\hyperlink{SFMT_8h_a2224d63688cbf9b1f50c01d5d9bb7f29}{sfmt\+\_\+gen\+\_\+rand\+\_\+all}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+I\+MD oriented Fast Mersenne Twister(\+S\+F\+M\+T) pseudorandom number generator using C structure. 
+
+\begin{DoxyAuthor}{Author}
+Mutsuo Saito (Hiroshima University) 
+
+Makoto Matsumoto (The University of Tokyo)
+\end{DoxyAuthor}
+Copyright (C) 2006, 2007 Mutsuo Saito, Makoto Matsumoto and Hiroshima University. Copyright (C) 2012 Mutsuo Saito, Makoto Matsumoto, Hiroshima University and The University of Tokyo. All rights reserved.
+
+The 3-\/clause B\+SD License is applied to this software, see L\+I\+C\+E\+N\+S\+E.\+txt
+
+\begin{DoxyNote}{Note}
+We assume that your system has inttypes.\+h. If your system doesn\textquotesingle{}t have inttypes.\+h, you have to typedef uint32\+\_\+t and uint64\+\_\+t, and you have to define P\+R\+Iu64 and P\+R\+Ix64 in this file as follows\+: \begin{DoxyVerb} typedef unsigned int uint32_t
+ typedef unsigned long long uint64_t
+ #define PRIu64 "llu"
+ #define PRIx64 "llx"
+\end{DoxyVerb}
+ uint32\+\_\+t must be exactly 32-\/bit unsigned integer type (no more, no less), and uint64\+\_\+t must be exactly 64-\/bit unsigned integer type. P\+R\+Iu64 and P\+R\+Ix64 are used for printf function to print 64-\/bit unsigned int and 64-\/bit unsigned int in hexadecimal format. 
+\end{DoxyNote}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SFMT_8h_ac582131d7a7c8ee57e73180d1714f9d5}\label{SFMT_8h_ac582131d7a7c8ee57e73180d1714f9d5}} 
+\index{SFMT.h@{SFMT.h}!PRIu64@{PRIu64}}
+\index{PRIu64@{PRIu64}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{PRIu64}{PRIu64}}
+{\footnotesize\ttfamily \#define P\+R\+Iu64~\char`\"{}llu\char`\"{}}
+
+\mbox{\Hypertarget{SFMT_8h_aba38357387a474f439428dee1984fc5a}\label{SFMT_8h_aba38357387a474f439428dee1984fc5a}} 
+\index{SFMT.h@{SFMT.h}!PRIx64@{PRIx64}}
+\index{PRIx64@{PRIx64}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{PRIx64}{PRIx64}}
+{\footnotesize\ttfamily \#define P\+R\+Ix64~\char`\"{}llx\char`\"{}}
+
+\mbox{\Hypertarget{SFMT_8h_a7b09bf387434973d287ff39ee33b3ac6}\label{SFMT_8h_a7b09bf387434973d287ff39ee33b3ac6}} 
+\index{SFMT.h@{SFMT.h}!SFMTST\_H@{SFMTST\_H}}
+\index{SFMTST\_H@{SFMTST\_H}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{SFMTST\_H}{SFMTST\_H}}
+{\footnotesize\ttfamily \#define S\+F\+M\+T\+S\+T\+\_\+H}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}\label{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_t@{sfmt\_t}}
+\index{sfmt\_t@{sfmt\_t}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_t}{sfmt\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structSFMT__T}{S\+F\+M\+T\+\_\+T}} \mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}}}
+
+\mbox{\Hypertarget{SFMT_8h_ab1ee414cba9ca0f33a3716e7a92c2b79}\label{SFMT_8h_ab1ee414cba9ca0f33a3716e7a92c2b79}} 
+\index{SFMT.h@{SFMT.h}!w128\_t@{w128\_t}}
+\index{w128\_t@{w128\_t}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{w128\_t}{w128\_t}}
+{\footnotesize\ttfamily typedef union \mbox{\hyperlink{unionW128__T}{W128\+\_\+T}} \mbox{\hyperlink{SFMT_8h_ab1ee414cba9ca0f33a3716e7a92c2b79}{w128\+\_\+t}}}
+
+128-\/bit data type 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{SFMT_8h_a04f57c1e9a6b5c0c52ac774a50da6c7e}\label{SFMT_8h_a04f57c1e9a6b5c0c52ac774a50da6c7e}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_fill\_array32@{sfmt\_fill\_array32}}
+\index{sfmt\_fill\_array32@{sfmt\_fill\_array32}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_fill\_array32()}{sfmt\_fill\_array32()}}
+{\footnotesize\ttfamily void sfmt\+\_\+fill\+\_\+array32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt,  }\item[{uint32\+\_\+t $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+This function generates pseudorandom 32-\/bit integers in the specified array\mbox{[}\mbox{]} by one call. The number of pseudorandom integers is specified by the argument size, which must be at least 624 and a multiple of four. The generation by this function is much faster than the following gen\+\_\+rand function.
+
+For initialization, init\+\_\+gen\+\_\+rand or init\+\_\+by\+\_\+array must be called before the first call of this function. This function can not be used after calling gen\+\_\+rand function, without initialization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+{\em array} & an array where pseudorandom 32-\/bit integers are filled by this function. The pointer to the array must be {\bfseries{\char`\"{}aligned\char`\"{}}} (namely, must be a multiple of 16) in the S\+I\+MD version, since it refers to the address of a 128-\/bit integer. In the standard C version, the pointer is arbitrary.\\
+\hline
+{\em size} & the number of 32-\/bit pseudorandom integers to be generated. size must be a multiple of 4, and greater than or equal to (M\+E\+XP / 128 + 1) $\ast$ 4.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+{\bfseries{memalign}} or {\bfseries{posix\+\_\+memalign}} is available to get aligned memory. Mac O\+SX doesn\textquotesingle{}t have these functions, but {\bfseries{malloc}} of O\+SX returns the pointer to the aligned memory block. 
+\end{DoxyNote}
+\mbox{\Hypertarget{SFMT_8h_ab9d6542bb167426bd35591afd32136af}\label{SFMT_8h_ab9d6542bb167426bd35591afd32136af}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_fill\_array64@{sfmt\_fill\_array64}}
+\index{sfmt\_fill\_array64@{sfmt\_fill\_array64}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_fill\_array64()}{sfmt\_fill\_array64()}}
+{\footnotesize\ttfamily void sfmt\+\_\+fill\+\_\+array64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt,  }\item[{uint64\+\_\+t $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+This function generates pseudorandom 64-\/bit integers in the specified array\mbox{[}\mbox{]} by one call. The number of pseudorandom integers is specified by the argument size, which must be at least 312 and a multiple of two. The generation by this function is much faster than the following gen\+\_\+rand function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state For initialization, init\+\_\+gen\+\_\+rand or init\+\_\+by\+\_\+array must be called before the first call of this function. This function can not be used after calling gen\+\_\+rand function, without initialization.\\
+\hline
+{\em array} & an array where pseudorandom 64-\/bit integers are filled by this function. The pointer to the array must be \char`\"{}aligned\char`\"{} (namely, must be a multiple of 16) in the S\+I\+MD version, since it refers to the address of a 128-\/bit integer. In the standard C version, the pointer is arbitrary.\\
+\hline
+{\em size} & the number of 64-\/bit pseudorandom integers to be generated. size must be a multiple of 2, and greater than or equal to (M\+E\+XP / 128 + 1) $\ast$ 2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+{\bfseries{memalign}} or {\bfseries{posix\+\_\+memalign}} is available to get aligned memory. Mac O\+SX doesn\textquotesingle{}t have these functions, but {\bfseries{malloc}} of O\+SX returns the pointer to the aligned memory block. 
+\end{DoxyNote}
+\mbox{\Hypertarget{SFMT_8h_a2224d63688cbf9b1f50c01d5d9bb7f29}\label{SFMT_8h_a2224d63688cbf9b1f50c01d5d9bb7f29}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_gen\_rand\_all@{sfmt\_gen\_rand\_all}}
+\index{sfmt\_gen\_rand\_all@{sfmt\_gen\_rand\_all}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_gen\_rand\_all()}{sfmt\_gen\_rand\_all()}}
+{\footnotesize\ttfamily void sfmt\+\_\+gen\+\_\+rand\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt }\end{DoxyParamCaption})}
+
+This function fills the internal state array with pseudorandom integers. 
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state\\
+\hline
+\end{DoxyParams}
+This function fills the internal state array with pseudorandom integers. \mbox{\Hypertarget{SFMT_8h_a6454ae6ac89dbaa2fd5db79be99dd408}\label{SFMT_8h_a6454ae6ac89dbaa2fd5db79be99dd408}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_get\_idstring@{sfmt\_get\_idstring}}
+\index{sfmt\_get\_idstring@{sfmt\_get\_idstring}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_get\_idstring()}{sfmt\_get\_idstring()}}
+{\footnotesize\ttfamily const char$\ast$ sfmt\+\_\+get\+\_\+idstring (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt }\end{DoxyParamCaption})}
+
+This function returns the identification string. The string shows the word size, the Mersenne exponent, and all parameters of this generator. 
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{SFMT_8h_a4a0698581c5ce4fdb269f814fd438a5f}\label{SFMT_8h_a4a0698581c5ce4fdb269f814fd438a5f}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_get\_min\_array\_size32@{sfmt\_get\_min\_array\_size32}}
+\index{sfmt\_get\_min\_array\_size32@{sfmt\_get\_min\_array\_size32}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_get\_min\_array\_size32()}{sfmt\_get\_min\_array\_size32()}}
+{\footnotesize\ttfamily int sfmt\+\_\+get\+\_\+min\+\_\+array\+\_\+size32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt }\end{DoxyParamCaption})}
+
+This function returns the minimum size of array used for {\bfseries{fill\+\_\+array32()}} function. 
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+minimum size of array used for fill\+\_\+array32() function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{SFMT_8h_a22ebb5ab2cf7e28d2bcf21ffffcc7e39}\label{SFMT_8h_a22ebb5ab2cf7e28d2bcf21ffffcc7e39}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_get\_min\_array\_size64@{sfmt\_get\_min\_array\_size64}}
+\index{sfmt\_get\_min\_array\_size64@{sfmt\_get\_min\_array\_size64}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_get\_min\_array\_size64()}{sfmt\_get\_min\_array\_size64()}}
+{\footnotesize\ttfamily int sfmt\+\_\+get\+\_\+min\+\_\+array\+\_\+size64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt }\end{DoxyParamCaption})}
+
+This function returns the minimum size of array used for {\bfseries{fill\+\_\+array64()}} function. 
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+minimum size of array used for fill\+\_\+array64() function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{SFMT_8h_a28f357a6d2a9cd74cec3c9d458e58475}\label{SFMT_8h_a28f357a6d2a9cd74cec3c9d458e58475}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_init\_by\_array@{sfmt\_init\_by\_array}}
+\index{sfmt\_init\_by\_array@{sfmt\_init\_by\_array}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_init\_by\_array()}{sfmt\_init\_by\_array()}}
+{\footnotesize\ttfamily void sfmt\+\_\+init\+\_\+by\+\_\+array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt,  }\item[{uint32\+\_\+t $\ast$}]{init\+\_\+key,  }\item[{int}]{key\+\_\+length }\end{DoxyParamCaption})}
+
+This function initializes the internal state array, with an array of 32-\/bit integers used as the seeds 
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+{\em init\+\_\+key} & the array of 32-\/bit integers, used as a seed. \\
+\hline
+{\em key\+\_\+length} & the length of init\+\_\+key. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{SFMT_8h_a674d820db863265836ef9cb203aa4130}\label{SFMT_8h_a674d820db863265836ef9cb203aa4130}} 
+\index{SFMT.h@{SFMT.h}!sfmt\_init\_gen\_rand@{sfmt\_init\_gen\_rand}}
+\index{sfmt\_init\_gen\_rand@{sfmt\_init\_gen\_rand}!SFMT.h@{SFMT.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_init\_gen\_rand()}{sfmt\_init\_gen\_rand()}}
+{\footnotesize\ttfamily void sfmt\+\_\+init\+\_\+gen\+\_\+rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt,  }\item[{uint32\+\_\+t}]{seed }\end{DoxyParamCaption})}
+
+This function initializes the internal state array with a 32-\/bit integer seed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+{\em seed} & a 32-\/bit integer used as the seed. \\
+\hline
+\end{DoxyParams}

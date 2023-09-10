@@ -1,0 +1,31 @@
+\hypertarget{selection_8h}{}\doxysection{M\+N\+P\+\_\+\+L\+I\+B/selection.h File Reference}
+\label{selection_8h}\index{MNP\_LIB/selection.h@{MNP\_LIB/selection.h}}
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{selection_8h_aeb7774b0c983b0737419f73fb50d5949}{selection}} (char $\ast$file\+\_\+name, char $\ast$$\ast$$\ast$motif\+\_\+list, int $\ast$delta)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{selection_8h_aeb7774b0c983b0737419f73fb50d5949}\label{selection_8h_aeb7774b0c983b0737419f73fb50d5949}} 
+\index{selection.h@{selection.h}!selection@{selection}}
+\index{selection@{selection}!selection.h@{selection.h}}
+\doxysubsubsection{\texorpdfstring{selection()}{selection()}}
+{\footnotesize\ttfamily int selection (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+name,  }\item[{char $\ast$$\ast$$\ast$}]{motif\+\_\+list,  }\item[{int $\ast$}]{delta }\end{DoxyParamCaption})}
+
+Algoritmo di selezione input 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & puntatore al nome del dataset che andremo a restituire \\
+\hline
+{\em motif\+\_\+list} & triplo puntatore che ci permetterà di avere l\textquotesingle{}elenco di tutti i motif in una directory \\
+\hline
+{\em delta} & puntatore a valore di delta necessario per la computazione dell\textquotesingle{}algoritmo exact\+BT \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+intero che rappresenta il numero di motif nella directory 
+\end{DoxyReturn}

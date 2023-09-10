@@ -1,0 +1,46 @@
+\hypertarget{results_8c}{}\doxysection{src/results.c File Reference}
+\label{results_8c}\index{src/results.c@{src/results.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{results_8c_a091788490d4f080b1413928496f8de15}{design\+\_\+result\+\_\+file}} (char $\ast$file\+\_\+name, char $\ast$motif\+\_\+name, int delta, char $\ast$originate\+File)
+\item 
+void \mbox{\hyperlink{results_8c_a46f633c7dc524756af38b96aef087ddd}{write\+Result}} (char $\ast$result\+File, char $\ast$rand\+File)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{results_8c_a091788490d4f080b1413928496f8de15}\label{results_8c_a091788490d4f080b1413928496f8de15}} 
+\index{results.c@{results.c}!design\_result\_file@{design\_result\_file}}
+\index{design\_result\_file@{design\_result\_file}!results.c@{results.c}}
+\doxysubsubsection{\texorpdfstring{design\_result\_file()}{design\_result\_file()}}
+{\footnotesize\ttfamily void design\+\_\+result\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+name,  }\item[{char $\ast$}]{motif\+\_\+name,  }\item[{int}]{delta,  }\item[{char $\ast$}]{originate\+File }\end{DoxyParamCaption})}
+
+Organizzo un\textquotesingle{}intefaccia nel file riassuntivo di output con nome del dataset e del motif usato, delta usata 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & nome del grafo\\
+\hline
+{\em motif\+\_\+name} & nome del motif usato\\
+\hline
+{\em delta} & valore di delta usato per la computazione\\
+\hline
+{\em originate\+File} & nome del file su cui andremo a scrivere i risultati finali \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{results_8c_a46f633c7dc524756af38b96aef087ddd}\label{results_8c_a46f633c7dc524756af38b96aef087ddd}} 
+\index{results.c@{results.c}!writeResult@{writeResult}}
+\index{writeResult@{writeResult}!results.c@{results.c}}
+\doxysubsubsection{\texorpdfstring{writeResult()}{writeResult()}}
+{\footnotesize\ttfamily void write\+Result (\begin{DoxyParamCaption}\item[{char $\ast$}]{result\+File,  }\item[{char $\ast$}]{Original\+File }\end{DoxyParamCaption})}
+
+Funzione usata per scrivere i risultati nel file finale
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+File} & file che contiene l\textquotesingle{}output dell\textquotesingle{}algoritmo exact\+BT\\
+\hline
+{\em Original\+File} & file finale su cui vado a scrivere il numero di occorrenze di un motif e il running time dell\textquotesingle{}algoritmo exact\+BT \\
+\hline
+\end{DoxyParams}

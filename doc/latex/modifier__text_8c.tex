@@ -1,0 +1,33 @@
+\hypertarget{modifier__text_8c}{}\doxysection{src/modifier\+\_\+text.c File Reference}
+\label{modifier__text_8c}\index{src/modifier\_text.c@{src/modifier\_text.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{modifier__text_8c_a7faeed5bcaa10a5bb46899d42f1df6e4}{get\+Vector}} (char $\ast$file\+\_\+name, int $\ast$$\ast$num, int len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{modifier__text_8c_a7faeed5bcaa10a5bb46899d42f1df6e4}\label{modifier__text_8c_a7faeed5bcaa10a5bb46899d42f1df6e4}} 
+\index{modifier\_text.c@{modifier\_text.c}!getVector@{getVector}}
+\index{getVector@{getVector}!modifier\_text.c@{modifier\_text.c}}
+\doxysubsubsection{\texorpdfstring{getVector()}{getVector()}}
+{\footnotesize\ttfamily int get\+Vector (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+name,  }\item[{int $\ast$$\ast$}]{num,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Funzione che estrae il vettore di valori temporali dal file che rappresenta il grafo 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & percorso e nome del file che conteine il grafo che andremo a manipolare\\
+\hline
+{\em num} & doppio puntatore ad un vettore vuoto in cui verranno inseriti i valori temporali\\
+\hline
+{\em len} & lunghezza iniziale del vettore\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lunghezza del nuovo vettore di tempi 
+\end{DoxyReturn}

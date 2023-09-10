@@ -1,0 +1,29 @@
+\hypertarget{support__text_8h}{}\doxysection{M\+N\+P\+\_\+\+L\+I\+B/support\+\_\+text.h File Reference}
+\label{support__text_8h}\index{MNP\_LIB/support\_text.h@{MNP\_LIB/support\_text.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{support__text_8h_a7681f41f2c502ddc17c9e28229533972}{substitute}} (char $\ast$file\+\_\+name, char $\ast$support\+\_\+file, int $\ast$$\ast$ptr, int len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{support__text_8h_a7681f41f2c502ddc17c9e28229533972}\label{support__text_8h_a7681f41f2c502ddc17c9e28229533972}} 
+\index{support\_text.h@{support\_text.h}!substitute@{substitute}}
+\index{substitute@{substitute}!support\_text.h@{support\_text.h}}
+\doxysubsubsection{\texorpdfstring{substitute()}{substitute()}}
+{\footnotesize\ttfamily void substitute (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+name,  }\item[{char $\ast$}]{support\+\_\+file,  }\item[{int $\ast$$\ast$}]{ptr,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Generazione del file Permutation\+File con tempi randomizzati 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & percorso e nome del file da cui si prendono le prime due colonne che non devono essere cambiate \\
+\hline
+{\em support\+\_\+file} & percorso e nome del file di output, con i valori dei tempi che vroremmo permutati rispetto al file originale \\
+\hline
+{\em ptr} & puntatore al vettore di tempi \\
+\hline
+{\em len} & lunghezza del vettore di tempi \\
+\hline
+\end{DoxyParams}

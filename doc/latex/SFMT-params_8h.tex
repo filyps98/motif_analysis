@@ -1,0 +1,49 @@
+\hypertarget{SFMT-params_8h}{}\doxysection{M\+N\+P\+\_\+\+L\+I\+B/\+S\+F\+M\+T-\/params.h File Reference}
+\label{SFMT-params_8h}\index{MNP\_LIB/SFMT-\/params.h@{MNP\_LIB/SFMT-\/params.h}}
+{\ttfamily \#include \char`\"{}S\+F\+M\+T-\/params19937.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{SFMT-params_8h_a3a3676fef7e90e9e811e90aff69708d6}{S\+F\+M\+T\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{SFMT-params_8h_ae8765d3beb939a39118cbcbf4def7905}{S\+F\+M\+T\+\_\+\+M\+E\+XP}}~19937
+\item 
+\#define \mbox{\hyperlink{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}{S\+F\+M\+T\+\_\+N}}~(\mbox{\hyperlink{SFMT-params_8h_ae8765d3beb939a39118cbcbf4def7905}{S\+F\+M\+T\+\_\+\+M\+E\+XP}} / 128 + 1)
+\item 
+\#define \mbox{\hyperlink{SFMT-params_8h_aefe6c5709ca7daa50fda5fa4e46873eb}{S\+F\+M\+T\+\_\+\+N32}}~(\mbox{\hyperlink{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}{S\+F\+M\+T\+\_\+N}} $\ast$ 4)
+\item 
+\#define \mbox{\hyperlink{SFMT-params_8h_ac5a47815782bcb7e5116a847c7955bcf}{S\+F\+M\+T\+\_\+\+N64}}~(\mbox{\hyperlink{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}{S\+F\+M\+T\+\_\+N}} $\ast$ 2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SFMT-params_8h_ae8765d3beb939a39118cbcbf4def7905}\label{SFMT-params_8h_ae8765d3beb939a39118cbcbf4def7905}} 
+\index{SFMT-\/params.h@{SFMT-\/params.h}!SFMT\_MEXP@{SFMT\_MEXP}}
+\index{SFMT\_MEXP@{SFMT\_MEXP}!SFMT-\/params.h@{SFMT-\/params.h}}
+\doxysubsubsection{\texorpdfstring{SFMT\_MEXP}{SFMT\_MEXP}}
+{\footnotesize\ttfamily \#define S\+F\+M\+T\+\_\+\+M\+E\+XP~19937}
+
+\mbox{\Hypertarget{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}\label{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}} 
+\index{SFMT-\/params.h@{SFMT-\/params.h}!SFMT\_N@{SFMT\_N}}
+\index{SFMT\_N@{SFMT\_N}!SFMT-\/params.h@{SFMT-\/params.h}}
+\doxysubsubsection{\texorpdfstring{SFMT\_N}{SFMT\_N}}
+{\footnotesize\ttfamily \#define S\+F\+M\+T\+\_\+N~(\mbox{\hyperlink{SFMT-params_8h_ae8765d3beb939a39118cbcbf4def7905}{S\+F\+M\+T\+\_\+\+M\+E\+XP}} / 128 + 1)}
+
+Mersenne Exponent. The period of the sequence is a multiple of 2$^\wedge$\+M\+E\+X\+P-\/1. \#define S\+F\+M\+T\+\_\+\+M\+E\+XP 19937 S\+F\+MT generator has an internal state array of 128-\/bit integers, and N is its size. \mbox{\Hypertarget{SFMT-params_8h_aefe6c5709ca7daa50fda5fa4e46873eb}\label{SFMT-params_8h_aefe6c5709ca7daa50fda5fa4e46873eb}} 
+\index{SFMT-\/params.h@{SFMT-\/params.h}!SFMT\_N32@{SFMT\_N32}}
+\index{SFMT\_N32@{SFMT\_N32}!SFMT-\/params.h@{SFMT-\/params.h}}
+\doxysubsubsection{\texorpdfstring{SFMT\_N32}{SFMT\_N32}}
+{\footnotesize\ttfamily \#define S\+F\+M\+T\+\_\+\+N32~(\mbox{\hyperlink{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}{S\+F\+M\+T\+\_\+N}} $\ast$ 4)}
+
+N32 is the size of internal state array when regarded as an array of 32-\/bit integers. \mbox{\Hypertarget{SFMT-params_8h_ac5a47815782bcb7e5116a847c7955bcf}\label{SFMT-params_8h_ac5a47815782bcb7e5116a847c7955bcf}} 
+\index{SFMT-\/params.h@{SFMT-\/params.h}!SFMT\_N64@{SFMT\_N64}}
+\index{SFMT\_N64@{SFMT\_N64}!SFMT-\/params.h@{SFMT-\/params.h}}
+\doxysubsubsection{\texorpdfstring{SFMT\_N64}{SFMT\_N64}}
+{\footnotesize\ttfamily \#define S\+F\+M\+T\+\_\+\+N64~(\mbox{\hyperlink{SFMT-params_8h_a499c7434eb486e922fa75b1c439f2b27}{S\+F\+M\+T\+\_\+N}} $\ast$ 2)}
+
+N64 is the size of internal state array when regarded as an array of 64-\/bit integers. \mbox{\Hypertarget{SFMT-params_8h_a3a3676fef7e90e9e811e90aff69708d6}\label{SFMT-params_8h_a3a3676fef7e90e9e811e90aff69708d6}} 
+\index{SFMT-\/params.h@{SFMT-\/params.h}!SFMT\_PARAMS\_H@{SFMT\_PARAMS\_H}}
+\index{SFMT\_PARAMS\_H@{SFMT\_PARAMS\_H}!SFMT-\/params.h@{SFMT-\/params.h}}
+\doxysubsubsection{\texorpdfstring{SFMT\_PARAMS\_H}{SFMT\_PARAMS\_H}}
+{\footnotesize\ttfamily \#define S\+F\+M\+T\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+H}
+

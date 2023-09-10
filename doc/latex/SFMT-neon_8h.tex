@@ -1,0 +1,51 @@
+\hypertarget{SFMT-neon_8h}{}\doxysection{M\+N\+P\+\_\+\+L\+I\+B/\+S\+F\+M\+T-\/neon.h File Reference}
+\label{SFMT-neon_8h}\index{MNP\_LIB/SFMT-\/neon.h@{MNP\_LIB/SFMT-\/neon.h}}
+
+
+S\+I\+MD oriented Fast Mersenne Twister(\+S\+F\+M\+T) for A\+RM with 128b N\+E\+ON.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{SFMT-neon_8h_a019988f2ffb34f9b9c4ae71087a50bf1}{rotate\+\_\+bytes}}(A,  B,  C)~vreinterpretq\+\_\+u32\+\_\+u8(vextq\+\_\+u8(vreinterpretq\+\_\+u8\+\_\+u32(A),vreinterpretq\+\_\+u8\+\_\+u32(B),(C)))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{SFMT-neon_8h_a2224d63688cbf9b1f50c01d5d9bb7f29}{sfmt\+\_\+gen\+\_\+rand\+\_\+all}} (\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$sfmt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+I\+MD oriented Fast Mersenne Twister(\+S\+F\+M\+T) for A\+RM with 128b N\+E\+ON. 
+
+\begin{DoxyAuthor}{Author}
+Masaki Ota
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+We assume L\+I\+T\+T\+LE E\+N\+D\+I\+AN in this file 
+\end{DoxyNote}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SFMT-neon_8h_a019988f2ffb34f9b9c4ae71087a50bf1}\label{SFMT-neon_8h_a019988f2ffb34f9b9c4ae71087a50bf1}} 
+\index{SFMT-\/neon.h@{SFMT-\/neon.h}!rotate\_bytes@{rotate\_bytes}}
+\index{rotate\_bytes@{rotate\_bytes}!SFMT-\/neon.h@{SFMT-\/neon.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_bytes}{rotate\_bytes}}
+{\footnotesize\ttfamily \#define rotate\+\_\+bytes(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{B,  }\item[{}]{C }\end{DoxyParamCaption})~vreinterpretq\+\_\+u32\+\_\+u8(vextq\+\_\+u8(vreinterpretq\+\_\+u8\+\_\+u32(A),vreinterpretq\+\_\+u8\+\_\+u32(B),(C)))}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{SFMT-neon_8h_a2224d63688cbf9b1f50c01d5d9bb7f29}\label{SFMT-neon_8h_a2224d63688cbf9b1f50c01d5d9bb7f29}} 
+\index{SFMT-\/neon.h@{SFMT-\/neon.h}!sfmt\_gen\_rand\_all@{sfmt\_gen\_rand\_all}}
+\index{sfmt\_gen\_rand\_all@{sfmt\_gen\_rand\_all}!SFMT-\/neon.h@{SFMT-\/neon.h}}
+\doxysubsubsection{\texorpdfstring{sfmt\_gen\_rand\_all()}{sfmt\_gen\_rand\_all()}}
+{\footnotesize\ttfamily void sfmt\+\_\+gen\+\_\+rand\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{SFMT_8h_a786e4a6ba82d3cb2f62241d6351d973f}{sfmt\+\_\+t}} $\ast$}]{sfmt }\end{DoxyParamCaption})}
+
+This function fills the internal state array with pseudorandom integers. 
+\begin{DoxyParams}{Parameters}
+{\em sfmt} & S\+F\+MT internal state \\
+\hline
+\end{DoxyParams}
