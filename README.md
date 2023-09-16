@@ -34,11 +34,8 @@ To test the different datasets, the process of timestamp permutation for each mo
 A high value of Z-Score, SP, or SRP for a particular motif implies that the count of its occurrences between the original and permuted graphs differs significantly. This can suggest that the network is structurally dependent on that type of model, and permuting the timestamps causes the network to lose the functional meaning it had.
 
 <div align="center">
-  <img src="SRP_2_nodes.png" alt="All datasets 2-nodes motif" style="width: 50%;"/>
-</div>
-
-<div align="center">
-  <img src="Dataset_zoom_2_nodes.png" alt="Some datasets 2-nodes motif" style="width: 50%;"/>
+  <img src="SRP_2_nodes.png" alt="All datasets 2-nodes motif" style="width: 30%;"/>
+  <img src="Dataset_zoom_2_nodes.png" alt="Some datasets 2-nodes motif" style="width: 30%;"/>
 </div>
 
 <div align="center">
