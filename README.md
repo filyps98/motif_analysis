@@ -1,38 +1,34 @@
-##############################################################
-IL PROGRAMMA RICHIEDE L'UTILIZZO DI UN SISTEMA OPERATIVO LINUX\n
-##############################################################
-1) INSERIRE IL PROPRIO PATH NELLA VARIABILE project_path \n
-   PRESENTE IN MAIN.C: IL PATH DEVE ESSERE UGUALE A QUELLO CHE \n
-   SI USEREBBE PER ACCEDERE A QUESTA CARTELLA DA TERMINALE. IL \n
-   PATH DEVE ESSERE PRECEDUTO DA cd. \n\n
+# Motif Analysis
+The program requires the use of a Linux operating system.
 
-2) PER ESEGUIRE IL PROGRAMMA DIGITARE "MAKE RUN" DA TERMINALE \n
-   DALLA CARTELLA FILE_MANIPULATION_NEW \n
-   (DOPO AVER COMPILATO IL MAKEFILE SEMPRE NELLA STESSA CARTELLA) \n\n
+## Set-up
+1. Insert your path into the "project_path" variable
+   located in MAIN.C: The path should be identical to the one
+   you would use to access this folder from the terminal. The
+   path should be preceded by 'cd'.
 
-3) E' NECESSARIO COMPILARE ANCHE TUTTI I MAKEFILE PRESENTI \n
-   NELLA CARTELLA MOTIFS_SIGNIFICANCE. MAGGIORI INFORMAZIONI \n
-   NEI READ_ME PRESENTI SEMPRE NELLA STESSA CARTELLA. \n
-   IN PARTICOLARE SI CONSIDERANO I MAKEFILE PRESENTI IN \n
-   code_paper/examples/exact \n\n
+2. To run the program, type "MAKE RUN" in the terminal
+   from the FILE_MANIPULATION_NEW folder
+   (after compiling the MAKEFILE, also located in the same folder).
 
-4) SI CONSIGLIA LA MODIFICA DEL NUMERO DI PERMUTAZIONI SE SI \n
-   VUOLE RIDURRE IL TEMPO DI ESECUZIONE, SOPRATTUTTO PER DATASET \n
-   MOLTO ESTESI (OSSIA TUTTI ECCETTO CollegeMsg.txt) \n \n
-   
+3. It is also necessary to compile all the MAKEFILEs
+   in the MOTIFS_SIGNIFICANCE folder. More information
+   can be found in the README files in the same folder.
+   Specifically, consider the MAKEFILEs located in
+   code_paper/examples/exact.
 
-#############################################################
-ULTERIORI INFORMAZIONI: \n
-- Nella cartella "motifs_significance/datasets" sono disponibili \n
-  tutti i dataset che possono essere usati per l'esecuzione \n
-  del programma. \n
-- Nella cartella "Result_Every_Motif" sono contenuti i risultati \n
-  del programma per ogni tipo di motif.\n
-- Nella cartella "motifs_significance/code_paper/examples/motifs"\n
-  sono presenti tutti i file rappresentanti i motif.\n
-- All'interno di "file_manipulation_new/src e file_manipulation/mnp_lib"\n
-  sono presenti file header e c, che appartengono al programma di\n
-  randomizzazione SFMT (già sviluppato). Il resto dei file sono\n
-  stati creati da me.\n
-- La documentazione doxygen è presente in "file_manipulation/doc
-  /html/index.html"\n
+4. It is recommended to adjust the number of permutations
+   if you want to reduce execution time, especially for large datasets.
+
+
+## ADDITIONAL INFORMATION:
+1. In the "motifs_significance/datasets" folder, you can find
+  all the datasets that can be used with the program.
+2. The results of the program for each type of motif are
+  located in the "Result_Every_Motif" folder.
+3. The "motifs_significance/code_paper/examples/motifs" folder
+  contains all the files representing motifs.
+4. Within "file_manipulation_new/src" and "file_manipulation/mnp_lib",
+  there are header and C files that belong to the SFMT randomization
+  program (already developed). The rest of the files were created by me.
+5. Doxygen documentation can be found in "file_manipulation/doc/html/index.html".
